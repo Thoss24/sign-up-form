@@ -1,0 +1,68 @@
+/* Custom font */
+@font-face {
+    font-family: Norse-Bold;
+    src: url(../sign-up-form/custom-font/Norse-Bold\(1\).otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.container-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+    height: 100vh;
+}
+
+.form-container {
+    flex-direction: column;
+    width: 95%;
+}
+
+.image-container {
+    background-color: red;
+    width: 50%;
+}
+
+header {
+    height: 20%;
+    background-color: grey;
+}
+
+form {
+    min-height: 60%;
+    background-color: yellow;
+}
+
+footer {
+    height: 20%;
+    background-color: aqua;
+}
+
+@media only screen and (max-width: 600px) {
+
+.container-all {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.image-container {
+    height: 10vh;
+    width: 95%;
+}
+
+.form-container {
+    height: 90vh;
+}
+}
