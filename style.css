@@ -18,42 +18,44 @@ body {
 
 .container-all {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     justify-content: center;
-    width: 95vw;
+    width: 95%;
     min-height: 100vh;
 }
 
 .form-container {
     flex-flow: column;
-    width: 95%;
-    min-height: 1200px
+    min-height: 1200px;
+    width: 95vw;
+    min-width: 65vw;
 }
 
 .image-container {
-    background-color: red;
-    width: 50%;
-}
-
-#leaf-image {
-    height: 100%;
-    width: 100%;
+    background: url(../sign-up-form/images/simon-leopard-unsplash.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    width: 40vw;
     min-width: 600px;
 }
 
-header {
+.row-text {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    display: flex;
+}
+
+header, footer {
     min-height: 20%;
-    background-color: grey;
 }
 
 form {
     min-height: 60%;
-    background-color: yellow;
-}
-
-footer {
-    min-height: 20%;
-    background-color: aqua;
+    background-color: rgba(17, 13, 13, 0.4);
+    color: white;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
 @media only screen and (max-width: 600px) {
@@ -61,16 +63,12 @@ footer {
 .container-all {
     flex-direction: column;
     justify-content: center;
-    margin-left: 25px;
-}
-
-.image-container {
-    height: 10vh;
-    width: 95%;
-    min-height: 150px;
 }
 
 .form-container {
-    height: 90vh;
+    background: url(../sign-up-form/images/simon-leopard-unsplash.jpg);
+    background-size: 100% 100%;
+    width: 92vw;
 }
+
 }
