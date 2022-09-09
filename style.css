@@ -21,12 +21,12 @@ body {
     flex-flow: row;
     justify-content: center;
     width: 95%;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 .form-container {
     flex-flow: column;
-    min-height: 1200px;
+    min-height: 1100px;
     width: 95vw;
     min-width: 65vw;
 }
