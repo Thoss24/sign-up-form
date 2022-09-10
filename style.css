@@ -26,8 +26,8 @@ body {
 
 .form-container {
     flex-flow: column;
-    min-height: 900px;
-    width: 95vw;
+    min-height: 1080px;
+    width: 100vw;
     min-width: 65vw;
 }
 
@@ -42,7 +42,7 @@ body {
 .row-text {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     display: flex;
     background-color: rgba(17, 13, 13, 0.4);
     justify-content: center;
@@ -59,7 +59,7 @@ form {
     min-height: 60%;
     background-color: rgba(17, 13, 13, 0.4);
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
@@ -68,12 +68,18 @@ form {
 .container-all {
     flex-direction: column;
     justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.row-text, form {
+    font-size: 19px;
 }
 
 .form-container {
     background: url(../sign-up-form/images/simon-leopard-unsplash.jpg);
     background-size: 100% 100%;
-    width: 92vw;
+    width: 100vw;
 }
 
 }
