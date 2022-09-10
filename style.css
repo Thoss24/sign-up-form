@@ -20,22 +20,27 @@ body {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    width: 95%;
+    width: 85%;
     min-height: 100vh;
 }
 
 .form-container {
     flex-flow: column;
-    min-height: 1080px;
+    min-height: 1000px;
     width: 100vw;
     min-width: 65vw;
+}
+
+.form-content {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .image-container {
     background: url(../sign-up-form/images/simon-leopard-unsplash.jpg);
     background-position: center;
     background-size: 100% 100%;
-    width: 40vw;
+    width: 45vw;
     min-width: 600px;
 }
 
@@ -44,7 +49,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 22px;
     display: flex;
-    background-color: rgba(17, 13, 13, 0.4);
+    background-color: rgba(59, 46, 46, 0.4);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -57,11 +62,29 @@ header, footer {
 
 form {
     min-height: 60%;
-    background-color: rgba(17, 13, 13, 0.4);
+    background-color: rgba(59, 46, 46, 0.4);
     color: white;
     font-size: 22px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
+
+.form-rows {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 70px;
+    margin-left: 60px;
+}
+
+@media only screen and (max-width: 840px) {
+    .form-content {
+        flex-direction: column;
+    }
+}
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -70,6 +93,11 @@ form {
     justify-content: center;
     width: 100vw;
     overflow-x: hidden;
+}
+
+.form-content {
+   
+   flex-direction: column
 }
 
 .row-text, form {
