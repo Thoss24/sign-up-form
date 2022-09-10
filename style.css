@@ -53,11 +53,18 @@ body {
     align-items: center;
     text-align: start;
     line-height: 1.5;
-    padding-left: 20px;
 }
 
 header, footer {
     min-height: 30%;
+}
+
+header p {
+    margin-left: 50px;
+}
+
+footer button {
+    margin-left: 50px;
 }
 
 form {
@@ -106,6 +113,11 @@ footer {
 
 footer button {
     margin-top: 150px;
+    margin-left: 0;
+}
+
+header p {
+    margin-left: 0;
 }
 
 .form-content {
