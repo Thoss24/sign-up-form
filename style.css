@@ -45,6 +45,25 @@ body {
     min-width: 600px;
 }
 
+.banner {
+    background-color: rgba(37, 37, 37, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 740px;
+    height: 120px;
+    font-family: Norse-Bold;
+}
+
+.banner img {
+    height: 110px;
+}
+
+.banner p {
+    color: white;
+    font-size: 80px;
+}
+
 .row-text {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -62,6 +81,7 @@ header {
 
 footer {
     height: 20%;
+ 
 }
 
 header p {
@@ -69,7 +89,10 @@ header p {
 }
 
 footer button {
-    margin-left: 50px;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
 }
 
 form {
@@ -89,6 +112,7 @@ form {
     margin-right: 70px;
     margin-left: 50px;
     height: 100px;
+    margin-top: 50px;
 }
 
 .wrapper {
@@ -96,6 +120,15 @@ form {
     flex-direction: row;
     height: 70px;
     font-size: 17px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 10px;
+    font-size: 22px;
 }
 
 .wrapper input {
@@ -109,9 +142,13 @@ form {
     height: 200px;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1430px) {
     .form-content {
         flex-direction: column;
+    }
+
+    .form-rows {
+        margin-top: 0px;
     }
 
     .wrapper input {
@@ -143,6 +180,20 @@ form {
     justify-content: center;
     width: 100vw;
     overflow-x: hidden;
+}
+
+.banner {
+    display: none;
+}
+
+.form-rows {
+    margin-top: 0px;
+}
+
+.footer-wrap {
+    margin-bottom: 50px;
+    font-size: 18px;
+    margin-right: 20px;
 }
 
 .wrapper input {
@@ -182,6 +233,7 @@ header p {
 }
 
 .form-container {
+    justify-content: center;
     background: url(../sign-up-form/images/simon-leopard-unsplash.jpg);
     background-size: 100% 100%;
     width: 100vw;
