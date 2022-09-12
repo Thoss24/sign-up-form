@@ -150,6 +150,17 @@ form {
     border-radius: 5px;
     padding: 2px;
     font-size: 18px;
+    color: white;
+    background-color: rgba(175, 142, 132, 0.781)
+}
+
+.submit-button button:hover {
+    background-color: rgba(243, 238, 236, 0.781);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.footer-wrap > p > a:hover {
+    color: blue;
 }
 
 @media only screen and (max-width: 1430px) {
