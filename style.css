@@ -146,6 +146,12 @@ form {
     margin-top: 40px;
 }
 
+#error-message {
+    color: darkred;
+    font-size: 15px;
+    text-shadow: 1px black;
+}
+
 .submit-button button {
     margin-top: 10px;
     border-radius: 5px;
@@ -272,6 +278,12 @@ header p {
 ::placeholder {
     color: black;
     opacity: 1;
+}
+
+#error-message {
+    color: lightcoral;
+    font-size: 15px;
+    text-shadow: 1px black;
 }
 
 }
